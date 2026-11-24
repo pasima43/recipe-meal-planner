@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Recipe ingredients, instructions and nutrition information."
+    />
+    <title>Recipe | Recipe and Meal Planner</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <script type="module" src="js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-header__logo" href="index.html">Recipe and Meal Planner</a>
+      <nav class="site-header__nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Search</a></li>
+          <li><a href="plan.html">Meal Plan</a></li>
+          <li><a href="favorites.html">Favorites</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <a class="back-link" href="index.html">&larr; Back to search</a>
+      <p
+        id="status-message"
+        class="status"
+        role="status"
+        aria-live="polite"
+      ></p>
+      <article id="recipe-details" class="recipe-details"></article>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        &copy; <span id="year"></span> Recipe and Meal Planner. Recipe data from
+        Spoonacular and TheMealDB.
+      </p>
+    </footer>
+  </body>
+</html>
